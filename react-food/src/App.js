@@ -5,7 +5,8 @@ import Home from './components/Home';
 import Menu from './components/Menu';
 import ProductList from './components/ProductList';
 import UpdateList from './components/UpdateList';
-import { BrowserRouter,  Route, HashRouter, Routes} from "react-router-dom";
+import { BrowserRouter,  Route, Routes} from "react-router-dom";
+import CreateRestaurant from './components/CreateRestaurant';
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
       <Menu/>
       <Routes>
           <Route path="/" element={<Home />}> </Route>
+          <Route path="/create-restaurant" element={<CreateRestaurant />}></Route>
           <Route path="/product-list" element={<ProductList />}></Route>
           <Route path="/update-list" element={<UpdateList />}></Route>
-
+    
         </Routes>
 
       </BrowserRouter>

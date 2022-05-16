@@ -15,6 +15,7 @@ export default function Menu() {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link> <Link to="/">Home</Link></Nav.Link>
+                            <Nav.Link> <Link to="/create-restaurant">Create Restaurant</Link></Nav.Link>
                             <Nav.Link ><Link to="/product-list">Product List</Link> </Nav.Link>
                             <Nav.Link ><Link to="/update-list">Update List</Link></Nav.Link>
                         </Nav>

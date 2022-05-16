@@ -1,11 +1,18 @@
 {
-    "restaurant": [
+  "restaurant": [
     {
-        "name": "Pizza Hut",
-        "address": "noida",
-        "rating": "4.3",
-        "email": "pizzahut@test.com",
-        "id": 1
+      "name": "Pizza Hut",
+      "address": "noida",
+      "rating": "4.3",
+      "email": "pizzahut@test.com",
+      "id": 1
+    },
+    {
+      "name": "dominos",
+      "address": "gurugram",
+      "email": "dominoz@gmail.com",
+      "ratting": "4.0",
+      "id": "2"
     }
-]
+  ]
 }
