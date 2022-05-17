@@ -2,11 +2,11 @@ import React, {useState} from 'react';
 import {Form, Button} from "react-bootstrap";
 
 let restaurantData={
-    name: "abcd",
-    address: "jhdsbf",
-    email: "@gmail",
-    ratting: "4.3",
-    id: "2",
+    name: "",
+    address: "",
+    email: "",
+    rating: "",
+    id: "",
 
 }
 
@@ -36,7 +36,8 @@ function CreateRestaurant() {
         })
         .then(res => res.json())
         .then(result =>{
-            console.log(result)
+            // console.log("data added successfully")
+            alert("data added successfully")
         })
     }
   return (
@@ -68,8 +69,8 @@ function CreateRestaurant() {
               <Form.Group className="mb-3" controlId="formBasicRatting">
                   <Form.Label className='d-flex'>Restaurant Ratting</Form.Label>
                   <Form.Control type="text" placeholder="Enter restaurant ratting" 
-                      name="ratting"
-                      value={restaurant.ratting}
+                      name="rating"
+                      value={restaurant.rating}
                       onChange={getChanges}/>
               </Form.Group>
             
@@ -81,4 +82,4 @@ function CreateRestaurant() {
   )
 }
 
-export default CreateRestaurant
+export default CreateRestaurant;

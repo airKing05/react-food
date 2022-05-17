@@ -6,8 +6,6 @@ import { Link } from "react-router-dom";
 export default function Menu() {
     return (
         <div>
-
-
             <Navbar bg="light" expand="lg">
                 <Container>
                     <Navbar.Brand ><Link to='/'>React-Food</Link> </Navbar.Brand>

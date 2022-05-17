@@ -8,11 +8,39 @@
       "id": 1
     },
     {
-      "name": "dominos",
-      "address": "gurugram",
-      "email": "dominoz@gmail.com",
-      "ratting": "4.0",
-      "id": "2"
+      "name": "lapinoz",
+      "address": "hojkhas",
+      "email": "lapinoz@gmail.com",
+      "rating": "4.8",
+      "id": 2
+    },
+    {
+      "name": "kfc",
+      "address": "Saket",
+      "email": "kfc@gmail.com",
+      "rating": "3.9",
+      "id": 3
+    },
+    {
+      "name": "burgar king",
+      "address": "chandni chauk",
+      "email": "burgarKing@gmail.com",
+      "rating": "3.8",
+      "id": 4
+    },
+    {
+      "name": "Subway",
+      "address": "vyapar kendra gururgram",
+      "email": "subway@gmailc.om",
+      "rating": "4.6",
+      "id": 5
+    },
+    {
+      "name": "Woody jons",
+      "address": "galeriya",
+      "email": "woodyJons@gmail.com",
+      "rating": "3.8",
+      "id": 6
     }
   ]
 }

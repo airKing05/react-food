@@ -20,10 +20,15 @@ function App() {
           <Route path="/" element={<Home />}> </Route>
           <Route path="/create-restaurant" element={<CreateRestaurant />}></Route>
           <Route path="/product-list" element={<ProductList />}></Route>
-          <Route path="/update-list" element={<UpdateList />}></Route>
-    
+          <Route path="/update-list/:id" element={<UpdateList />}></Route>
+          {/* /:id or /:slug ye sbhi dynamicly data ko get krne ke liye url me pass kiye jate hai 
+          can also send one more data /:id/:name
+           */}
+          {/* <Route
+            path="/update-list/:id"
+            render={props => (<UpdateList {...props} />)}>
+          </Route> */}
         </Routes>
-
       </BrowserRouter>
     </div>
   );
