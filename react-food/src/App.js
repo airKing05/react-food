@@ -7,6 +7,8 @@ import ProductList from './components/ProductList';
 import UpdateList from './components/UpdateList';
 import { BrowserRouter,  Route, Routes} from "react-router-dom";
 import CreateRestaurant from './components/CreateRestaurant';
+import SearchRestaurant from './components/SearchRestaurant';
+
 
 function App() {
   return (
@@ -28,6 +30,9 @@ function App() {
             path="/update-list/:id"
             render={props => (<UpdateList {...props} />)}>
           </Route> */}
+
+          <Route path="/search-restaurant" element={<SearchRestaurant />}></Route>
+
         </Routes>
       </BrowserRouter>
     </div>

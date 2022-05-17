@@ -15,7 +15,9 @@ export default function Menu() {
                             <Nav.Link> <Link to="/">Home</Link></Nav.Link>
                             <Nav.Link> <Link to="/create-restaurant">Create Restaurant</Link></Nav.Link>
                             <Nav.Link ><Link to="/product-list">Product List</Link> </Nav.Link>
-                            <Nav.Link ><Link to="/update-list">Update List</Link></Nav.Link>
+                            {/* <Nav.Link ><Link to="/update-list">Update List</Link></Nav.Link> */}
+                            <Nav.Link ><Link to="/search-restaurant">Search Restaurant</Link></Nav.Link>
+
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
