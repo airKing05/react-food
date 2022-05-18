@@ -8,14 +8,12 @@ import UpdateList from './components/UpdateList';
 import { BrowserRouter,  Route, Routes} from "react-router-dom";
 import CreateRestaurant from './components/CreateRestaurant';
 import SearchRestaurant from './components/SearchRestaurant';
+import Login from './components/Login';
 
 
 function App() {
   return (
     <div className="App">
-      
-   
-
       <BrowserRouter>
       <Menu/>
       <Routes>
@@ -32,6 +30,7 @@ function App() {
           </Route> */}
 
           <Route path="/search-restaurant" element={<SearchRestaurant />}></Route>
+          <Route path="/login" element = {<Login/>}></Route>
 
         </Routes>
       </BrowserRouter>

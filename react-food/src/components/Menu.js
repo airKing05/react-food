@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function Menu() {
     return (
         <div>
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="light" expand="lg" >
                 <Container>
                     <Navbar.Brand ><Link to='/'>React-Food</Link> </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -17,6 +17,7 @@ export default function Menu() {
                             <Nav.Link ><Link to="/product-list">Product List</Link> </Nav.Link>
                             {/* <Nav.Link ><Link to="/update-list">Update List</Link></Nav.Link> */}
                             <Nav.Link ><Link to="/search-restaurant">Search Restaurant</Link></Nav.Link>
+                            <Nav.Link ><Link to="/login">Login</Link></Nav.Link>
 
                         </Nav>
                     </Navbar.Collapse>
