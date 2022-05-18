@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
-import { useParams } from "react-router-dom";
+import {useNavigate}  from "react-router-dom";
 
 
 const Login = () => {
@@ -8,39 +8,47 @@ const Login = () => {
         name: "",
         password: ""
     });
-    const {key } = useParams();
+    
+    
+    const navigate = useNavigate();
+
 
 
     // get from data
-    let name; 
+    let name;
     let value;
     function getFormData(event) {
         name = event.target.name;
         value = event.target.value;
-        setLoginData({...loginData, [name]: value})
+        setLoginData({ ...loginData, [name]: value })
         //console.log(name, value)
     }
-    
+
 
     // get user data
-    function getUserData(props) {
-        
+    function getUserData() {
+
         fetch('http://localhost:3001/login?q=' + loginData.name)
-        .then(res => res.json())
-        .then(result => {
-           // console.log("result",result[0].name)
-            console.log(loginData.name)
-            //result[0].name===loginData.name
-            if (result>0){
-                console.log(props)
-                localStorage.setItem('data', JSON.stringify(result))
-                //console.log(localStorage)
-                //  console.warn(props.history.push('list'))
-            }else{
-                alert("pleach check user name")
-            }
-            
-        })
+            .then(res => res.json())
+            .then(result => {
+                console.log("result",result.length)
+                //console.log(loginData.name)
+                //result[0].name===loginData.name
+               localStorage.clear();
+                if (result.length> 0) {
+                    console.log()
+                    localStorage.setItem('result', JSON.stringify(result))
+
+                    // after login successfully need to redirect to product list
+                    navigate("/");
+
+                    console.log(localStorage)
+                    //console.warn(props.history.push('list'))
+                } else {
+                    alert("pleach check user name")
+                }
+
+            })
     }
 
     return (
