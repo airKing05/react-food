@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Form, Button} from "react-bootstrap";
+import Menu from './Menu';
 
 let restaurantData={
     name: "",
@@ -41,6 +42,8 @@ function CreateRestaurant() {
         })
     }
   return (
+      <>
+      <Menu/>
     <div className='container' style={{maxWidth: '500px'}}>
           <Form onSubmit={addRestaurantDetails}>
               <Form.Group className="mb-3" controlId="formBasicName">
@@ -79,6 +82,7 @@ function CreateRestaurant() {
               </Button>
           </Form>
     </div>
+      </>
   )
 }
 

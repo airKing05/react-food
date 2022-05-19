@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import {useNavigate}  from "react-router-dom";
+import Menu from "./Menu";
 
 
 const Login = () => {
@@ -52,6 +53,8 @@ const Login = () => {
     }
 
     return (
+        <>
+        <Menu/>
         <div className='container'>
             <h4>To check Restaurant near by you</h4>
             <input
@@ -77,6 +80,7 @@ const Login = () => {
                 className='px-4'
                 onClick={getUserData}>Login</Button>
         </div>
+        </>
     )
 }
 

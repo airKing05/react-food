@@ -2,22 +2,24 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './components/Home';
-import Menu from './components/Menu';
 import ProductList from './components/ProductList';
 import UpdateList from './components/UpdateList';
 import { BrowserRouter,  Route, Routes} from "react-router-dom";
 import CreateRestaurant from './components/CreateRestaurant';
 import SearchRestaurant from './components/SearchRestaurant';
 import Login from './components/Login';
+import Logout from './components/Logout';
+import Protected from './components/Protected';
 
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Menu/>
+      {/* <Menu/>   if use redux its okay 
+      but page not refreshing every time so we did it */} 
       <Routes>
-          <Route path="/" element={<Home />}> </Route>
+          <Route path="/" element={<Protected Component={<Home />} />}> </Route>
           <Route path="/create-restaurant" element={<CreateRestaurant />}></Route>
           <Route path="/product-list" element={<ProductList />}></Route>
           <Route path="/update-list/:id" element={<UpdateList />}></Route>
@@ -31,7 +33,7 @@ function App() {
 
           <Route path="/search-restaurant" element={<SearchRestaurant />}></Route>
           <Route path="/login" element = {<Login/>}></Route>
-
+          <Route path="/logout" element = {<Logout/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

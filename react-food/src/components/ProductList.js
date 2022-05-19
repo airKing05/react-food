@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { Table } from "react-bootstrap";
 import { NavLink } from 'react-router-dom';
+import Menu from './Menu';
 
 export default function ProductList() {
     const [restaurant, setRestaurent] = useState([]);
@@ -34,6 +35,7 @@ export default function ProductList() {
 
   return (
     <div>
+        <Menu/>
           <Table striped bordered hover>
               <thead>
                   <tr>

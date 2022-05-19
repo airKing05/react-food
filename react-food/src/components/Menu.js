@@ -17,8 +17,13 @@ export default function Menu() {
                             <Nav.Link ><Link to="/product-list">Product List</Link> </Nav.Link>
                             {/* <Nav.Link ><Link to="/update-list">Update List</Link></Nav.Link> */}
                             <Nav.Link ><Link to="/search-restaurant">Search Restaurant</Link></Nav.Link>
-                            <Nav.Link ><Link to="/login">Login</Link></Nav.Link>
-
+                            {
+                                localStorage.getItem('result') ?  
+                                <Nav.Link ><Link to="/logout">Logout</Link></Nav.Link>
+                                : 
+                                 <Nav.Link ><Link to="/login">Login</Link></Nav.Link>
+                            }
+                           
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

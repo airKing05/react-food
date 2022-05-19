@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import { InputGroup, FormControl, Button, Table } from "react-bootstrap";
+import { InputGroup, FormControl, Table } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import Menu from './Menu';
 
 function SearchRestaurant() {
   const [search, setSearch] = useState("");
@@ -46,6 +47,7 @@ function SearchRestaurant() {
 
   return (
     <div>
+      <Menu/>
     <div className='container mt-5'>
       <InputGroup className="mb-3">
         <FormControl

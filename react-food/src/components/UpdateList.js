@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Form, Button } from "react-bootstrap";
 import { useParams } from "react-router-dom";
+import Menu from './Menu';
 
 let restaurantData = {
     name: "",
@@ -8,7 +9,6 @@ let restaurantData = {
     email: "",
     rating: "",
     id: "",
-
 };
 
 export default function UpdateList() {
@@ -68,6 +68,8 @@ export default function UpdateList() {
             })
     }
     return (
+        <>
+        <Menu/>
         <div className='container' style={{ maxWidth: '500px' }}>
             <Form onSubmit={editRestaurantDetails}>
                 <Form.Group className="mb-3" controlId="formBasicName">
@@ -106,5 +108,6 @@ export default function UpdateList() {
                 </Button>
             </Form>
         </div>
+        </>
     )
 }
