@@ -48,10 +48,10 @@ function SearchRestaurant() {
   return (
     <div>
       <Menu/>
-    <div className='container mt-5'>
+    <div className='container mt-5 text-center '>
       <InputGroup className="mb-3">
         <FormControl
-          placeholder="Restaurant | address | rating"
+          placeholder="Restaurant | Address | Rating"
           aria-label="Recipient's username"
           aria-describedby="basic-addon2"
           onChange={(e) => getSearchInput(e.target.value)}
@@ -80,8 +80,8 @@ function SearchRestaurant() {
               {search && search.map((item, index) =>
                 <tr key={index}>
                   <td>{index + 1}</td>
-                  <td>{item.name}</td>
-                  <td>{item.address}</td>
+                  <td className="text-capitalize">{item.name}</td>
+                  <td className="text-capitalize">{item.address}</td>
                   <td>{item.email}</td>
                   <td>{item.rating}</td>
                   <td>

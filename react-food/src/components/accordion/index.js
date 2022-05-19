@@ -19,7 +19,7 @@ function Accordion() {
   return (
     <div className='container mt-5'>
      <h4>See list of Restaurant in Accordion from</h4>
-     <section className='container bg-light' style={{maxWidth: '500px'}}>
+     <section className='container bg-light px-5 py-4' style={{maxWidth: '500px'}}>
       {
           restaurant && restaurant.map((currEle) => {
               const {id} = currEle;

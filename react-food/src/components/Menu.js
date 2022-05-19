@@ -11,7 +11,7 @@ export default function Menu() {
                     <Navbar.Brand ><Link to='/' className='text-decoration-none'>React-Food</Link> </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto ">
+                        <Nav className="" style={{margin: 'auto'}}>
                             <Nav.Link> <Link to="/" className='text-decoration-none'>Home</Link></Nav.Link>
                             <Nav.Link> <Link to="/create-restaurant" className='text-decoration-none'>Create Restaurant</Link></Nav.Link>
                             <Nav.Link ><Link to="/product-list" className='text-decoration-none'>Product List</Link> </Nav.Link>

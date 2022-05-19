@@ -36,7 +36,7 @@ export default function ProductList() {
     return (
         <div>
             <Menu />
-            <div className='container mt-5'>
+            <div className='container mt-5 text-center table-responsive'>
                 <Table striped bordered hover>
                     <thead>
                         <tr>
@@ -50,10 +50,10 @@ export default function ProductList() {
                     </thead>
                     <tbody>
                         {restaurant && restaurant.map((item, index) =>
-                            <tr key={index}>
+                            <tr key={index} >
                                 <td>{index + 1}</td>
-                                <td>{item.name}</td>
-                                <td>{item.address}</td>
+                                <td className="text-capitalize">{item.name}</td>
+                                <td className="text-capitalize">{item.address}</td>
                                 <td>{item.email}</td>
                                 <td>{item.rating}</td>
                                 <td>
