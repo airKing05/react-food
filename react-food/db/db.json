@@ -1,8 +1,8 @@
 {
-  "login" : [
+  "login": [
     {
-      "name" : "anilraj",
-      "password" : "12345" 
+      "name": "anilraj",
+      "password": "12345"
     }
   ],
   "restaurant": [
@@ -40,6 +40,13 @@
       "email": "kfc@gmail.com",
       "rating": "4.5",
       "id": 6
+    },
+    {
+      "name": "Tea Post",
+      "address": "Greter Noida",
+      "email": "teapost@gmail.com",
+      "rating": "3.9",
+      "id": 7
     }
   ]
 }

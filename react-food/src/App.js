@@ -9,7 +9,7 @@ import CreateRestaurant from './components/CreateRestaurant';
 import SearchRestaurant from './components/SearchRestaurant';
 import Login from './components/Login';
 import Logout from './components/Logout';
-import Protected from './components/Protected';
+// import Protected from './components/Protected';
 
 
 function App() {
@@ -19,7 +19,8 @@ function App() {
       {/* <Menu/>   if use redux its okay 
       but page not refreshing every time so we did it */} 
       <Routes>
-          <Route path="/" element={<Protected Component={<Home />} />}> </Route>
+          {/* <Route path="/" element={<Protected Component={<Home />} />}> </Route> */}
+          <Route path="/" element={<Home />}> </Route>
           <Route path="/create-restaurant" element={<CreateRestaurant />}></Route>
           <Route path="/product-list" element={<ProductList />}></Route>
           <Route path="/update-list/:id" element={<UpdateList />}></Route>

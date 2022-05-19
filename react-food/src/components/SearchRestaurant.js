@@ -63,51 +63,47 @@ function SearchRestaurant() {
           Search
         </Button> */}
       </InputGroup>
+        {/* get restaurant list  */}
+        {
+          search ? <Table striped bordered hover >
+            <thead>
+              <tr>
+                <th>Sr. No.</th>
+                <th>Restaurant</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Rating</th>
+                <th>Update Restaurant</th>
+              </tr>
+            </thead>
+            <tbody>
+              {search && search.map((item, index) =>
+                <tr key={index}>
+                  <td>{index + 1}</td>
+                  <td>{item.name}</td>
+                  <td>{item.address}</td>
+                  <td>{item.email}</td>
+                  <td>{item.rating}</td>
+                  <td>
+                    <NavLink to={'/update-list/' + item.id}
+                      style={{ color: 'green' }}
+                      className="text-decoration-none"
+                    >Edit</NavLink>
+                    <button
+                      style={{ border: 'none', background: 'none', color: 'red' }}
+                      onClick={() => deleteRestaurant(item.id)}>Remove</button>
+                  </td>
+                </tr>)}
+            </tbody>
+          </Table> : " "
 
-    </div>
+        }
 
-    {/* get restaurant list  */}
-{
-        search ? <Table striped bordered hover>
-          <thead>
-            <tr>
-              <th>Sr. No.</th>
-              <th>Restaurant</th>
-              <th>Address</th>
-              <th>Email</th>
-              <th>Rating</th>
-              <th>Update Restaurant</th>
-            </tr>
-          </thead>
-          <tbody>
-            {search && search.map((item, index) =>
-              <tr key={index}>
-                <td>{index + 1}</td>
-                <td>{item.name}</td>
-                <td>{item.address}</td>
-                <td>{item.email}</td>
-                <td>{item.rating}</td>
-                <td>
-                  <NavLink to={'/update-list/' + item.id}
-                    style={{ color: 'green' }}
-                    className="text-decoration-none"
-                  >Edit</NavLink>
-                  <button
-                  style={{ border: 'none', background: 'none', color: 'red' }}
-                  onClick={() => deleteRestaurant(item.id)}>Remove</button>
-                </td>
-              </tr>)}
-          </tbody>
-        </Table> : " "
- 
-} 
-
-{/* if no data found on the server */}
-{
-  noData ? <h4>no data founded in server</h4> : null
-}
-
-      
+        {/* if no data found on the server */}
+        {
+          noData ? <h4>no data founded in server</h4> : null
+        }
+    </div>     
     </div>
   )
 }

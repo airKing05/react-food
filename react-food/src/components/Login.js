@@ -55,8 +55,8 @@ const Login = () => {
     return (
         <>
         <Menu/>
-        <div className='container'>
-            <h4>To check Restaurant near by you</h4>
+        <div className='container mt-5 text-center'>
+            <h4 className='my-5'>To check Restaurant near by you</h4>
             <input
                 type="text"
                 placeholder='enter name'
