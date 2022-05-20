@@ -25,7 +25,7 @@ export default function UpdateList() {
 
     // fetch old data needed to update
     function oldData(props) {
-        alert(id)
+        //alert(id)
         fetch('http://localhost:3001/restaurant/' + id)
             .then(res => res.json())
             .then(result => {

@@ -60,7 +60,7 @@ const Login = () => {
             <input
                 type="text"
                 placeholder='enter name'
-                className="mb-3"
+                className="mb-3 mt-4"
                 name="name"
                 value={loginData.name}
                 onChange={getFormData}
@@ -79,6 +79,15 @@ const Login = () => {
                 type="submit"
                 className='px-4'
                 onClick={getUserData}>Login</Button>
+
+
+
+                <div className='bg-info mt-5'>
+                    <h6>For login add</h6>
+                    <span>Name: anilraj</span>
+                    <br/>
+                    <span>Password: 12345</span>
+                </div>
         </div>
         </>
     )

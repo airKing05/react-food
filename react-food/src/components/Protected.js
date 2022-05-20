@@ -18,12 +18,12 @@ function Protected(props) {
    const  {Component} = props;
    const navigate = useNavigate()
 
-   useEffect(()=>{
+//    useEffect(()=>{
        let login = localStorage.getItem('result')
        if(!login){
            navigate('/login')
        }
-   }, [])
+//    }, [])
 
     return(
         <>
