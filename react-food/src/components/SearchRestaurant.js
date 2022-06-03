@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useCallback} from 'react';
 import { InputGroup, FormControl, Table } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import Menu from './Menu';
@@ -23,10 +23,29 @@ function SearchRestaurant() {
           setNoData(true)
           setSearch(null)
         }
-      })
-    
+      }) 
   };
 
+
+  //implement debouncing on search  
+  const debounce = function(cb){
+    let timer;
+    return function(...arg){
+      if(timer){ 
+        // if user type krte krte ruk jata hai or 500ms me wapis type suru kr ete haia 
+        // to optimizedSearch ko call nahi krna hai timer ko zero krna hai
+        clearTimeout(timer);
+      }
+      // const context = this;
+      timer = setTimeout(() => {
+      timer = null; // can be removed
+      // cb.apply(context, arg) // when use main function (debounce) as arrow function
+      cb(arg)
+      }, 500);
+    }
+  };
+ //useCallback provide us memoized callback function
+  const optimizeSearch = useCallback(debounce(getSearchInput), [])
   
 
   // delete restaurant
@@ -54,7 +73,7 @@ function SearchRestaurant() {
           placeholder="Restaurant | Address | Rating"
           aria-label="Recipient's username"
           aria-describedby="basic-addon2"
-          onChange={(e) => getSearchInput(e.target.value)}
+          onChange={(e) => optimizeSearch(e.target.value)}
         />
         {/* <Button 
         variant="outline-secondary" 
