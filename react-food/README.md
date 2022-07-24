@@ -28,16 +28,21 @@ This React-Food App works for all the device.
 
 ## Screenshots
 #### Home page in full size 
+
 ![App Screenshot](https://github.com/airKing05/react-food/blob/main/react-food/screenShot/Screenshot%202022-07-24%20at%202.29.56%20PM.png?raw=true)
 #### Mobile Views
+
 - Accordion
+
 ![App Screenshot](https://github.com/airKing05/react-food/blob/main/react-food/screenShot/Screenshot%202022-07-24%20at%202.31.29%20PM.png?raw=true)
 ![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.32.47%20AM.png?raw=true)
 ![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.33.05%20AM.png?raw=true)
 ![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.32.01%20AM.png?raw=true)
 ![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.32.27%20AM.png?raw=true)
 
+
 - Add Restaurant into api
+
 ![App Screenshot](https://github.com/airKing05/react-food/blob/main/react-food/screenShot/Screenshot%202022-07-24%20at%202.32.09%20PM.png?raw=true)
 
 - Details of Restaurant and their dishes
@@ -45,10 +50,13 @@ This React-Food App works for all the device.
 ![App Screenshot](https://github.com/airKing05/react-food/blob/main/react-food/screenShot/Screenshot%202022-07-24%20at%202.32.43%20PM.png?raw=true)
 
 #### Search section
+
 ![App Screenshot](https://github.com/airKing05/react-food/blob/main/react-food/screenShot/Screenshot%202022-07-24%20at%202.33.37%20PM.png?raw=true)
 
 #### Cart section
+
 - SignUp / SignIn section
+
 ![App Screenshot](https://github.com/airKing05/react-food/blob/main/react-food/screenShot/Screenshot%202022-07-24%20at%202.34.14%20PM.png?raw=true)
 
 
