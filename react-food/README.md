@@ -35,10 +35,7 @@ This React-Food App works for all the device.
 - Accordion
 
 ![App Screenshot](https://github.com/airKing05/react-food/blob/main/react-food/screenShot/Screenshot%202022-07-24%20at%202.31.29%20PM.png?raw=true)
-![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.32.47%20AM.png?raw=true)
-![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.33.05%20AM.png?raw=true)
-![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.32.01%20AM.png?raw=true)
-![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.32.27%20AM.png?raw=true)
+
 
 
 - Add Restaurant into api
