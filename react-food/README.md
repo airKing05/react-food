@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Swiggy-Ui Clone 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Swiggy clone is built with latest development tools.
 
-## Available Scripts
 
-In the project directory, you can run:
+ - ReactJs is use to develop the ui part
+ - Fully responsible ui 
+ - To enhance the Ui Bootstrap ans Font-awesome is use
 
-### `npm start`
+This Swiggy app works across all devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Some ui feature 
+ - this is real Swiggy clone of 2021 version
+ - UI main component - Navbar, footer, welcome Page, Home Page.
+ - UI it include Home, account, search, all carousal (React slick slider) & accordion (Bootstrap accordion) of coupon, restaurant etc.
+ 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshots
+#### Welcome page 
 
-### `npm test`
+![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.28.25%20AM.png?raw=true)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Dishes card views
 
-### `npm run build`
+- Dishes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.29.50%20AM.png?raw=true)
+![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.32.47%20AM.png?raw=true)
+![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.33.05%20AM.png?raw=true)
+![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.32.01%20AM.png?raw=true)
+![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.32.27%20AM.png?raw=true)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Restaurant views
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.31.21%20AM.png?raw=true)
+![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.46.04%20AM.png?raw=true)
 
-### `npm run eject`
+#### Search section
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.43.52%20AM.png?raw=true)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Cart section
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Empty cart
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.40.38%20AM.png?raw=true)
 
-## Learn More
+- Cart with item
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.41.25%20AM.png?raw=true)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Account section
 
-### Code Splitting
+- Profile details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.39.07%20AM.png?raw=true)
+![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.39.49%20AM.png?raw=true)
 
-### Analyzing the Bundle Size
+- SignUp & SignIn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.37.21%20AM.png?raw=true)
+![App Screenshot](https://github.com/airKing05/new-food-app/blob/newbranch/client/screenShort/Screenshot%202022-07-24%20at%201.38.18%20AM.png?raw=true)
