@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-//import Card from './Card';
+
 
 
 export default function RestaurantCarousal() {
@@ -12,8 +12,8 @@ export default function RestaurantCarousal() {
         infinite: false,
         nextArrow: true,
         prevArrow: true,
-        autoplaySpeed: 1000,
-        autoplay: false,
+        autoplaySpeed: 2000,
+        autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1
     };

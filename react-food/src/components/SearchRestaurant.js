@@ -2,7 +2,7 @@ import React, {useState, useCallback} from 'react';
 import { InputGroup, FormControl, Table } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import Menu from './Menu';
-import { UilEdit, UilTrashAlt, UilEnvelopeUpload, UilLocationPinAlt, UilRestaurant, UilListOl, UilFavorite, UilPen } from '@iconscout/react-unicons'
+import { UilSearch, UilEdit, UilTrashAlt, UilEnvelopeUpload, UilLocationPinAlt, UilRestaurant, UilListOl, UilFavorite, UilPen } from '@iconscout/react-unicons'
 
 function SearchRestaurant() {
   const [search, setSearch] = useState("");
@@ -76,12 +76,6 @@ function SearchRestaurant() {
           aria-describedby="basic-addon2"
           onChange={(e) => optimizeSearch(e.target.value)}
         />
-        {/* <Button 
-        variant="outline-secondary" 
-        id="button-addon2"
-        onClick={getSearchRestaurant}>
-          Search
-        </Button> */}
       </InputGroup>
         {/* get restaurant list  */}
         {
