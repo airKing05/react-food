@@ -22,17 +22,19 @@ This React-Food App works for all the device.
  - To keep App simple one user Id with Password are added 
 
  ## Some Ui feature 
- - To enhance the simple CRUD app one Carousal of the bueatyful Images.
- - To access the restauyrant details easly one Accordion is added in Home page.
+ - To enhance the simple CRUD app one Carousal of the beautiful Images.
+ - To access the restaurant details easily one Accordion is added in Home page.
 
 
 ## Screenshots
 #### Home page in full size 
 
 ![App Screenshot](https://github.com/airKing05/react-food/blob/main/react-food/screenShot/Screenshot%202022-07-24%20at%202.29.56%20PM.png?raw=true)
-#### Mobile Views
 
+#### Mobile Views
 - Accordion
+
+A beautiful accordion without using any library.
 
 ![App Screenshot](https://github.com/airKing05/react-food/blob/main/react-food/screenShot/Screenshot%202022-07-24%20at%202.31.29%20PM.png?raw=true)
 
