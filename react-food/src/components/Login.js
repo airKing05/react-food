@@ -59,8 +59,8 @@ const Login = () => {
             <h4 className='my-5'>To check Restaurant near by you</h4>
             <input
                 type="text"
-                placeholder='enter name'
-                className="mb-3 mt-4"
+                placeholder=' Enter name'
+                className="mb-3 mt-4 pl-3"
                 name="name"
                 value={loginData.name}
                 onChange={getFormData}
@@ -68,7 +68,7 @@ const Login = () => {
             <br />
             <input
                 type="text"
-                placeholder='enter password'
+                placeholder=' Enter password'
                 className="mb-3"
                 name="password"
                 value={loginData.password}

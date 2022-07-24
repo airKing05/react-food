@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Table } from "react-bootstrap";
 import { NavLink } from 'react-router-dom';
 import Menu from './Menu';
+import { UilEdit, UilTrashAlt, UilEnvelopeUpload, UilLocationPinAlt, UilRestaurant, UilListOl, UilFavorite, UilPen } from '@iconscout/react-unicons'
 
 export default function ProductList() {
     const [restaurant, setRestaurent] = useState([]);
@@ -40,30 +41,30 @@ export default function ProductList() {
                 <Table striped bordered hover>
                     <thead>
                         <tr>
-                            <th>Sr. No.</th>
-                            <th>Restaurant</th>
-                            <th>Address</th>
-                            <th>Email</th>
-                            <th>Rating</th>
-                            <th>Update Restaurant</th>
+                            <th><UilListOl/> &nbsp;Sr. No.</th>
+                            <th><UilRestaurant />&nbsp; Restaurant</th>
+                            <th><UilLocationPinAlt />&nbsp; Address</th>
+                            <th><UilEnvelopeUpload />&nbsp; Email</th>
+                            <th><UilFavorite />&nbsp; Rating</th>
+                            <th><UilPen />&nbsp; Update Restaurant</th>
                         </tr>
                     </thead>
                     <tbody>
                         {restaurant && restaurant.map((item, index) =>
-                            <tr key={index} >
+                            <tr key={index}>
                                 <td>{index + 1}</td>
                                 <td className="text-capitalize">{item.name}</td>
                                 <td className="text-capitalize">{item.address}</td>
                                 <td>{item.email}</td>
                                 <td>{item.rating}</td>
-                                <td>
+                                <td className='d-flex justify-content-around'>
                                     <NavLink to={'/update-list/' + item.id}
                                         style={{ color: 'green' }}
                                         className="text-decoration-none"
-                                    >Edit</NavLink>
+                                    ><UilEdit/></NavLink>
                                     <button
                                         style={{ border: 'none', background: 'none', color: 'red' }}
-                                        onClick={() => deleteRestaurant(item.id)}>Remove</button>
+                                        onClick={() => deleteRestaurant(item.id)}><UilTrashAlt/></button>
                                 </td>
                             </tr>)}
                     </tbody>

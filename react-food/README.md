@@ -1,13 +1,13 @@
-# Swiggy-Ui Clone 
+# React Food App
 
-Swiggy clone is built with latest development tools.
+React-Food App is built with latest development tools.
 
 
  - ReactJs is use to develop the ui part
  - Fully responsible ui 
- - To enhance the Ui Bootstrap ans Font-awesome is use
+ - To enhance the Ui Bootstrap ans Unicorn icon is use
 
-This Swiggy app works across all devices.
+This React-Food App works for all the device.
 
 ## Some ui feature 
  - this is real Swiggy clone of 2021 version
