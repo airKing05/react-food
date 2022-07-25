@@ -17,7 +17,7 @@ This React-Food App works for all the device.
  - This is APP follow functional base react architecture.
  - This is **CRUD** application.
  - Searching feature is all added here with **Debouncing technique**.
- - Can search by Restaurant name, Dieshes name, Area etc.
+ - Can search by Restaurant name, dishes name, Area etc.
  - For the user Authentication the user login/logout page is also included.
  - To keep App simple one user Id with Password are added 
 
@@ -116,7 +116,7 @@ Restaurant api data look like
 
 ## Installation
 
-GitHub Repositry of React-Food-App
+GitHub Repository of React-Food-App
 ```bash
 https://github.com/airKing05/react-food.git
 ```
